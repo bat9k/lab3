@@ -41,7 +41,7 @@ fun NavigationScreen() {
             NavigationButton(stringResource(id = R.string.button_surface),Screen.Surface)
         }
     }
-}
+}//
 
 @Composable
 fun NavigationButton(text: String, screen: Screen) {
