@@ -32,6 +32,8 @@
     <string name="menu">Menu</string>>
     <string name="MyComposeApp" >MyComposeApp</string>
     <string name="covers">covers</string>
+    <string name="grid_icon">Grid icon</string>
+    <string name="Grid">Grid</string>
 </resources>
 
 
