@@ -4,6 +4,8 @@ import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.ImageBitmap
@@ -14,6 +16,10 @@ import androidx.compose.ui.unit.dp
 import com.raywenderlich.android.lab1.router.BackButtonHandler
 import com.raywenderlich.android.lab1.router.FundamentalsRouter
 import com.raywenderlich.android.lab1.router.Screen
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
+import com.raywenderlich.android.lab1.R
 
 
 @Composable
@@ -27,7 +33,11 @@ fun ScrollingScreen () {
 
 @Composable
 fun MyScrollingScreen(modifier: Modifier = Modifier) {
-
+    Column(modifier = modifier.verticalScroll(rememberScrollState())){
+        BookImage(R.drawable.advanced_architecture_android, R.string.architecture)
+        BookImage(R.drawable.kotlin_aprentice, R.string.learn_kotlin)
+        BookImage(R.drawable.kotlin_coroutines, R.string.coroutines)
+    }
 }
 
 @Composable
